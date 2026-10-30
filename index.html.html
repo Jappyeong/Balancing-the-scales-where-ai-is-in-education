@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancing the Scales: Where AI is in Education | Group 3</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgOffWhite: '#F7F5EF',
+                        slateDark: '#1E293B',
+                        terracotta: {
+                            100: '#FDF2F0',
+                            200: '#F9DDD6',
+                            500: '#D96B43',
+                            600: '#C2552D',
+                        },
+                        sage: {
+                            100: '#EEF3F0',
+                            200: '#D5E2DA',
+                            500: '#5A7D6C',
+                            600: '#466455',
+                            800: '#2C3E50',
+                        },
+                        amberGold: {
+                            100: '#FAF3E8',
+                            500: '#E0A96D',
+                            600: '#C98C49',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F7F5EF;
+            color: #1E293B;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(30, 41, 59, 0.05), 0 4px 12px -2px rgba(30, 41, 59, 0.03);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col selection:bg-terracotta-200 selection:text-terracotta-600">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-bgOffWhite/90 backdrop-blur-md border-b border-sage-200/60 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-xl bg-terracotta-500 flex items-center justify-center text-white font-serif font-bold text-lg shadow-sm">
+                    ⚖️
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-terracotta-500 tracking-wider uppercase block">H1101 | Group 3</span>
+                    <span class="font-serif font-bold text-sm text-slateDark leading-none">Balancing the Scales</span>
+                </div>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-6 text-xs font-semibold text-slateDark/80">
+                <a href="#overview" class="hover:text-terracotta-500 transition-colors">Overview</a>
+                <a href="#rise-of-ai" class="hover:text-terracotta-500 transition-colors">The Problem</a>
+                <a href="#global-context" class="hover:text-terracotta-500 transition-colors">Global Context</a>
+                <a href="#stakeholders" class="hover:text-terracotta-500 transition-colors">Stakeholders</a>
+                <a href="#media-gallery" class="hover:text-terracotta-500 transition-colors">Media & Videos</a>
+                <a href="#solutions" class="hover:text-terracotta-500 transition-colors">Solutions</a>
+                <a href="#conclusion" class="hover:text-terracotta-500 transition-colors">Reflection</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="#solutions" class="px-4 py-2 bg-terracotta-500 hover:bg-terracotta-600 text-white text-xs font-semibold rounded-full shadow-sm transition-all">
+                    Explore Solutions
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="min-h-[85vh] flex items-center justify-center relative px-6 py-12 bg-gradient-to-b from-terracotta-100/40 via-bgOffWhite to-bgOffWhite">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <div class="inline-flex items-center gap-2 bg-sage-100 px-4 py-1.5 rounded-full text-xs font-semibold text-sage-800 border border-sage-200">
+                        <i class="fa-solid fa-scale-balanced text-sage-600"></i> Coursework Integrity & AI Policy (MO-SS033-TCW)
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slateDark leading-tight">
+                        BALANCING THE SCALES: <br>
+                        <span class="text-terracotta-500 italic font-normal">Where AI is in Education</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slateDark/80 font-normal leading-relaxed">
+                        Generative AI has made it easy for senior high school students to hand their coursework over to a tool. This presentation examines how misuse affects learning and proposes three structured solutions to keep AI in the classroom without sacrificing critical thinking.
+                    </p>
+
+                    <!-- Core Group Position Banner -->
+                    <div class="bg-white p-5 rounded-2xl border border-amberGold-500/30 card-shadow text-left flex items-start gap-4">
+                        <div class="p-3 bg-amberGold-100 text-amberGold-600 rounded-xl shrink-0">
+                            <i class="fa-solid fa-compass text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-amberGold-600 uppercase tracking-widest mb-1">Group 3 Position Statement</h4>
+                            <p class="text-xs sm:text-sm text-slateDark font-medium leading-relaxed">
+                                "AI should be integrated into education through clear policies and responsible use rather than total bans, so it supports learning without replacing students' own thinking."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <a href="#overview" class="px-6 py-3 bg-slateDark text-white rounded-full text-xs font-semibold hover:bg-terracotta-500 transition-all flex items-center gap-2">
+                            Explore Dashboard <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                        <a href="#media-gallery" class="px-6 py-3 bg-sage-100 text-sage-800 border border-sage-200 rounded-full text-xs font-semibold hover:bg-sage-200 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-circle-play text-terracotta-500"></i> Featured Videos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Imagery -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden card-shadow border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students using tech thoughtfully" class="w-full h-80 sm:h-96 object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x600/EEF3F0/2C3E50?text=AI+in+Education'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slateDark/80 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white text-xs font-medium bg-black/40 backdrop-blur-md p-3 rounded-xl border border-white/20">
+                                <i class="fa-solid fa-graduation-cap text-amberGold-500 mr-1.5"></i> Senior High Students Navigating Generative AI Tools
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="py-16 px-6 max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Presentation Roadmap</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">From Problem Identification to Policy Solutions</h2>
+                <p class="text-sm text-slateDark/70 mt-2">Moving from how GenAI changed coursework to global contexts and concrete solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Roadmap Step 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-sage-200/80 card-shadow space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-terracotta-100 text-terracotta-500 font-bold flex items-center justify-center text-sm">01</div>
+                    <h3 class="font-bold text-slateDark text-base">The Rise of GenAI</h3>
+                    <ul class="text-xs text-slateDark/70 space-y-2 list-disc list-inside">
+                        <li>Highlight of the Decade (ChatGPT 2022)</li>
+                        <li>AI Outsourcing & Loss of Active Learning</li>
+                        <li>Gateway for Emotional Support & Loneliness</li>
+                    </ul>
+                </div>
+
+                <!-- Roadmap Step 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-sage-200/80 card-shadow space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-600 font-bold flex items-center justify-center text-sm">02</div>
+                    <h3 class="font-bold text-slateDark text-base">Geopolitics & Stakeholders</h3>
+                    <ul class="text-xs text-slateDark/70 space-y-2 list-disc list-inside">
+                        <li>Technological Zeitgeist (US & China plans)</li>
+                        <li>AI in Global vs Local Philippines Context</li>
+                        <li>Stakeholder Views (Teachers, SHS, Schools, Media)</li>
+                    </ul>
+                </div>
+
+                <!-- Roadmap Step 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-sage-200/80 card-shadow space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amberGold-100 text-amberGold-600 font-bold flex items-center justify-center text-sm">03</div>
+                    <h3 class="font-bold text-slateDark text-base">Concrete Solutions</h3>
+                    <ul class="text-xs text-slateDark/70 space-y-2 list-disc list-inside">
+                        <li>AI Assessment Scale (AIAS - 5 Levels)</li>
+                        <li>AI Literacy Program (12-Hour Curriculum)</li>
+                        <li>UNESCO Global Guidance for GenAI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section: Rise of GenAI -->
+        <section id="rise-of-ai" class="py-16 px-6 bg-white border-y border-sage-200/60">
+            <div class="max-w-7xl mx-auto space-y-12">
+                <div class="text-center max-w-2xl mx-auto">
+                    <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">The Problem</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">How GenAI Transformed Student Coursework</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1: ChatGPT Release & Iriga Study -->
+                    <div class="bg-bgOffWhite p-6 rounded-2xl border border-sage-200/60 card-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl relative">
+                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Students studying with devices" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x400/FDF2F0/D9777F?text=ChatGPT+Adoption'">
+                                <span class="absolute top-3 left-3 bg-terracotta-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Research Study</span>
+                            </div>
+                            <span class="text-[11px] font-bold text-terracotta-500 uppercase tracking-wider">Highlight of the Decade</span>
+                            <h3 class="font-bold text-lg text-slateDark mt-1 mb-2">ChatGPT & Senior High Usage</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed mb-4">
+                                Since ChatGPT's late-2022 release, generative AI has enabled students to shortcut critical thinking or cheat.
+                            </p>
+                            <div class="bg-white p-4 rounded-xl border border-sage-200/50 text-xs text-slateDark/80">
+                                <p class="font-semibold text-slateDark mb-1"><i class="fa-solid fa-magnifying-glass text-sage-500 mr-1"></i> Iriga Research Findings:</p>
+                                <p>Students primarily use AI for writing essays and assignments, followed by enhancing reports and presentations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: AI Outsourcing -->
+                    <div class="bg-bgOffWhite p-6 rounded-2xl border border-sage-200/60 card-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl relative">
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Abstract neural network" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x400/EEF3F0/5E8172?text=AI+Outsourcing'">
+                                <span class="absolute top-3 left-3 bg-sage-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cognitive Impact</span>
+                            </div>
+                            <span class="text-[11px] font-bold text-sage-600 uppercase tracking-wider">Bypassing Active Learning</span>
+                            <h3 class="font-bold text-lg text-slateDark mt-1 mb-2">AI Outsourcing</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed mb-4">
+                                Tasks exist to reinforce classroom theory. Offloading thinking to machines bypasses active learning and weakens core concept application.
+                            </p>
+                            <ul class="text-xs text-slateDark/70 space-y-2 bg-white p-4 rounded-xl border border-sage-200/50">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amberGold-500"></i> Loss of analytical and problem-solving skills</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amberGold-500"></i> Reduced face-to-face social interactions</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amberGold-500"></i> Deterioration of interpersonal skills</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Emotional Support Gateway -->
+                    <div class="bg-bgOffWhite p-6 rounded-2xl border border-sage-200/60 card-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl relative">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Person interacting on laptop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.src='https://placehold.co/600x400/FAF3E8/E0A96D?text=Emotional+Support'">
+                                <span class="absolute top-3 left-3 bg-amberGold-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Social Dynamics</span>
+                            </div>
+                            <span class="text-[11px] font-bold text-amberGold-600 uppercase tracking-wider">Chatbots & Confidants</span>
+                            <h3 class="font-bold text-lg text-slateDark mt-1 mb-2">Gateway for Emotional Support</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed mb-4">
+                                Younger generations display high openness to AI chatbots, seeking neutral, judgment-free confidants outside of academic settings.
+                            </p>
+                            <div class="bg-white p-4 rounded-xl border border-sage-200/50 text-xs text-slateDark/80 space-y-2">
+                                <p class="font-semibold text-terracotta-500"><i class="fa-solid fa-shield-cat mr-1"></i> Critical Consequences:</p>
+                                <p>Risk of social isolation when AI replaces human connection, alongside data privacy, safety, and environmental concerns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Context & Geopolitics Section -->
+        <section id="global-context" class="py-16 px-6 max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Geopolitical Landscape</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">Technological Zeitgeist & Global Alignment</h2>
+                <p class="text-sm text-slateDark/70 mt-2">AI is not just a classroom tool—it is a critical national economic and geopolitical asset.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden card-shadow border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Global technology network graph" class="w-full h-80 object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x600/EEF3F0/2C3E50?text=Global+AI+Context'">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-sage-200/80 card-shadow space-y-3">
+                        <h3 class="font-bold text-slateDark text-lg"><i class="fa-solid fa-earth-americas text-terracotta-500 mr-2"></i> China & US AI Strategies</h3>
+                        <p class="text-xs text-slateDark/80 leading-relaxed">
+                            China unveiled a 10-year plan to lead global AI development. Concurrently, the U.S. government recently barred the use of Claude's Fable and Mythos AI models due to national security concerns. These geopolitical actions shape tool accessibility, safety, and credibility worldwide.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-sage-200/80 card-shadow space-y-4">
+                        <h3 class="font-bold text-slateDark text-lg"><i class="fa-solid fa-scale-unbalanced text-sage-600 mr-2"></i> Policies: Global Leaders vs Philippines (DepEd)</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                            <div class="bg-sage-100/50 p-4 rounded-xl border border-sage-200">
+                                <p class="font-bold text-sage-800 mb-1">US & China Paradigm</p>
+                                <p class="text-slateDark/80">Heavy integration, AI-focused curricula, and strong industry-school partnerships designed to train students to build future AI technology.</p>
+                            </div>
+                            <div class="bg-terracotta-100/50 p-4 rounded-xl border border-terracotta-200">
+                                <p class="font-bold text-terracotta-600 mb-1">Philippines (DepEd) Policy</p>
+                                <p class="text-slateDark/80">Permits controlled AI usage, positioning AI as a guided assistant rather than a replacement. Focuses on supervised collaboration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Stakeholders Section -->
+        <section id="stakeholders" class="py-16 px-6 bg-white border-y border-sage-200/60">
+            <div class="max-w-7xl mx-auto space-y-10">
+                <div class="text-center max-w-2xl mx-auto">
+                    <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Stakeholder Analysis</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">Perspectives Across Education</h2>
+                    <p class="text-sm text-slateDark/70 mt-2">Select a stakeholder group to view their challenges and opportunities.</p>
+                </div>
+
+                <!-- Stakeholder Navigation Tabs -->
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button onclick="switchStakeholderTab('educators')" id="tab-educators" class="sh-tab active px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-terracotta-500 text-white shadow-sm">
+                        <i class="fa-solid fa-chalkboard-user mr-1.5"></i> Educators
+                    </button>
+                    <button onclick="switchStakeholderTab('students')" id="tab-students" class="sh-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-sage-100 text-sage-800 hover:bg-sage-200">
+                        <i class="fa-solid fa-user-graduate mr-1.5"></i> Senior High Students
+                    </button>
+                    <button onclick="switchStakeholderTab('institutions')" id="tab-institutions" class="sh-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-sage-100 text-sage-800 hover:bg-sage-200">
+                        <i class="fa-solid fa-building-columns mr-1.5"></i> Academic Institutions
+                    </button>
+                    <button onclick="switchStakeholderTab('media')" id="tab-media" class="sh-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-sage-100 text-sage-800 hover:bg-sage-200">
+                        <i class="fa-solid fa-newspaper mr-1.5"></i> Media Lens
+                    </button>
+                </div>
+
+                <!-- Tab Content Panel -->
+                <div class="bg-bgOffWhite p-8 rounded-3xl border border-sage-200/60 max-w-5xl mx-auto card-shadow min-h-[280px] flex items-center">
+                    <!-- Educators Content -->
+                    <div id="content-educators" class="sh-content space-y-4 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="px-3 py-1 bg-terracotta-100 text-terracotta-500 rounded-full font-bold text-xs">Frontline Challenge</span>
+                                    <h3 class="font-serif text-2xl font-bold text-slateDark">Educators</h3>
+                                </div>
+                                <p class="text-sm text-slateDark/80 leading-relaxed">
+                                    Educators occupy the frontline of AI integration, facing the challenge of balancing pedagogical benefits against instructional integrity. While teachers recognize AI's potential as a supportive tool, there is deep concern over its ability to erode original student thinking and academic discipline.
+                                </p>
+                                <div class="p-3.5 bg-white rounded-xl border border-sage-200 text-xs text-slateDark/70">
+                                    <strong>Key Goal:</strong> Navigating 21st-century digital learning strategies to ensure AI tools complement engagement without replacing core learning processes.
+                                </div>
+                            </div>
+                            <div class="md:col-span-5">
+                                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Teacher interacting in classroom" class="w-full h-48 object-cover rounded-2xl border border-sage-200" loading="lazy" onerror="this.src='https://placehold.co/600x400/EEF3F0/5E8172?text=Educators'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Students Content -->
+                    <div id="content-students" class="sh-content hidden space-y-4 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="px-3 py-1 bg-amberGold-100 text-amberGold-600 rounded-full font-bold text-xs">Double-Edged Tool</span>
+                                    <h3 class="font-serif text-2xl font-bold text-slateDark">Senior High School Students</h3>
+                                </div>
+                                <p class="text-sm text-slateDark/80 leading-relaxed">
+                                    Structured engagement with AI can enhance cognitive skills, problem-solving capabilities, and digital self-efficacy. However, utilizing AI to execute tasks directly—rather than for early brainstorming or language refinement—risks causing cognitive laziness and academic dishonesty.
+                                </p>
+                                <div class="p-3.5 bg-white rounded-xl border border-sage-200 text-xs text-slateDark/70">
+                                    <strong>Impact:</strong> Over-reliance diminishes writing self-efficacy and fosters habits that reduce personal effort in learning.
+                                </div>
+                            </div>
+                            <div class="md:col-span-5">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Students studying with tech" class="w-full h-48 object-cover rounded-2xl border border-sage-200" loading="lazy" onerror="this.src='https://placehold.co/600x400/FAF3E8/E0A96D?text=Students'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Institutions Content -->
+                    <div id="content-institutions" class="sh-content hidden space-y-4 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="px-3 py-1 bg-sage-100 text-sage-600 rounded-full font-bold text-xs">Governance & Equity</span>
+                                    <h3 class="font-serif text-2xl font-bold text-slateDark">Academic Institutions</h3>
+                                </div>
+                                <p class="text-sm text-slateDark/80 leading-relaxed">
+                                    Leadership focuses on governance, policy, and educational equity across the learning continuum. Structured institutional policies guiding responsible, limited AI usage show promise when executed properly to maintain academic integrity.
+                                </p>
+                                <div class="p-3.5 bg-white rounded-xl border border-sage-200 text-xs text-slateDark/70">
+                                    <strong>Equity Focus:</strong> Safeguarding learning outcomes across secondary and tertiary settings without widening academic or digital divides.
+                                </div>
+                            </div>
+                            <div class="md:col-span-5">
+                                <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80" alt="University building campus" class="w-full h-48 object-cover rounded-2xl border border-sage-200" loading="lazy" onerror="this.src='https://placehold.co/600x400/EEF3F0/2C3E50?text=Institutions'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media Content -->
+                    <div id="content-media" class="sh-content hidden space-y-4 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                            <div class="md:col-span-7 space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="px-3 py-1 bg-terracotta-100 text-terracotta-500 rounded-full font-bold text-xs">Public Perception</span>
+                                    <h3 class="font-serif text-2xl font-bold text-slateDark">AI Through the Media's Lens</h3>
+                                </div>
+                                <p class="text-sm text-slateDark/80 leading-relaxed">
+                                    Media coverage displays a mixed reception. While AI is portrayed as a helpful assistant for brainstorming and research, Philippine educators and journalists highlight serious concerns regarding unmonitored out-of-classroom assessments.
+                                </p>
+                                <div class="p-3.5 bg-white rounded-xl border border-sage-200 text-xs text-slateDark/70">
+                                    <strong>Primary Risk:</strong> Unmonitored out-of-classroom AI usage risks reducing opportunities for students to build critical problem-solving skills independently.
+                                </div>
+                            </div>
+                            <div class="md:col-span-5">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Media reporting and laptop screen" class="w-full h-48 object-cover rounded-2xl border border-sage-200" loading="lazy" onerror="this.src='https://placehold.co/600x400/FDF2F0/D9777F?text=Media+Lens'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Gallery & Featured Case Studies -->
+        <section id="media-gallery" class="py-16 px-6 max-w-7xl mx-auto space-y-10">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Featured Media & Case Studies</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">Video Insights on AI & Critical Thinking</h2>
+                <p class="text-sm text-slateDark/70 mt-2">Explore leading keynotes and discussions on embedding AI responsibly into educational frameworks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video 1: Sal Khan TED Talk -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-sage-200/80 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-slateDark relative">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/hJP5GqnTrNo" title="Sal Khan TED Talk: How AI Could Save Education" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] font-bold text-sage-600 bg-sage-100 px-2.5 py-1 rounded-full uppercase">Keynote Insight</span>
+                            <h3 class="font-bold text-lg text-slateDark">How AI Could Save (Not Destroy) Education — Sal Khan</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed">
+                                Khan Academy founder Sal Khan demonstrates how Socratic AI tools can spark active inquiry and deeper critical thinking rather than replacing student effort.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2: IBM Tech AI & Critical Thinking -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-sage-200/80 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-slateDark relative">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/k7PvscqGD24" title="AI & Education: Generative AI & the Future of Critical Thinking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] font-bold text-terracotta-500 bg-terracotta-100 px-2.5 py-1 rounded-full uppercase">Industry Perspective</span>
+                            <h3 class="font-bold text-lg text-slateDark">AI & Education: Generative AI & Critical Thinking</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed">
+                                A comprehensive breakdown of how modern educational systems must reform assessment policies to evaluate original human logic alongside AI-assisted research.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="py-16 px-6 max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Actionable Frameworks</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark mt-1">Our Three Proposed Solutions</h2>
+                <p class="text-sm text-slateDark/70 mt-2">Pragmatic approaches that preserve critical thinking while embracing innovation.</p>
+            </div>
+
+            <!-- SOLUTION 1: AI Assessment Scale (AIAS) Interactive Explorer -->
+            <div class="bg-white rounded-3xl border border-sage-200/80 card-shadow p-8 space-y-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-terracotta-500 uppercase tracking-wider">Solution 01</span>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slateDark">AI Assessment Scale (AIAS)</h3>
+                        <p class="text-xs sm:text-sm text-slateDark/70 mt-1">Instead of banning AI outright, the AIAS trains students in responsible, healthy usage across 5 clear levels.</p>
+                    </div>
+                    <div class="bg-sage-100 text-sage-800 text-xs px-4 py-2 rounded-full font-bold border border-sage-200">
+                        <i class="fa-solid fa-clock mr-1"></i> 9-Month Implementation | 6-Month Evaluation
+                    </div>
+                </div>
+
+                <!-- Interactive AIAS Level Slider -->
+                <div class="space-y-6 bg-bgOffWhite p-6 rounded-2xl border border-sage-200/60">
+                    <div class="flex justify-between items-center">
+                        <label for="aias-slider" class="text-xs font-bold text-slateDark uppercase tracking-wider">Drag Slider to Explore AIAS Levels:</label>
+                        <span id="aias-level-badge" class="px-3 py-1 bg-terracotta-500 text-white text-xs font-bold rounded-full">Level 1: No AI</span>
+                    </div>
+
+                    <input type="range" id="aias-slider" min="1" max="5" value="1" step="1" oninput="updateAIASDisplay(this.value)" class="w-full accent-terracotta-500 cursor-pointer">
+
+                    <div class="grid grid-cols-5 text-center text-[10px] font-bold text-slateDark/60">
+                        <span>1. No AI</span>
+                        <span>2. Planning</span>
+                        <span>3. Collaboration</span>
+                        <span>4. Full AI</span>
+                        <span>5. Exploration</span>
+                    </div>
+
+                    <!-- Level Dynamic Card -->
+                    <div id="aias-card" class="bg-white p-5 rounded-xl border border-sage-200 space-y-2">
+                        <h4 id="aias-title" class="font-bold text-slateDark text-base text-terracotta-500">Level 1: No AI</h4>
+                        <p id="aias-desc" class="text-xs text-slateDark/80 leading-relaxed">
+                            Tasks completed entirely by the student without any AI generation or assistance. Used for foundational assessments, exams, and baseline critical thinking exercises.
+                        </p>
+                        <p id="aias-permission" class="text-[11px] font-semibold text-sage-600 bg-sage-100 p-2 rounded-lg mt-2">
+                            <i class="fa-solid fa-user-check mr-1"></i> Teacher Evaluation Primary Focus: 100% Original Human Work
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3 Implementation Stages -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold text-slateDark uppercase tracking-wider">3 Policy Implementation Stages:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-4 bg-sage-100/40 rounded-xl border border-sage-200">
+                            <span class="font-bold text-sage-800 block mb-1">Stage 1: Design</span>
+                            <p class="text-slateDark/70">Hire policy consultants, commissions, or think tanks alongside educational domain experts.</p>
+                        </div>
+                        <div class="p-4 bg-sage-100/40 rounded-xl border border-sage-200">
+                            <span class="font-bold text-sage-800 block mb-1">Stage 2: Pilot</span>
+                            <p class="text-slateDark/70">Implement the pilot program in volunteer secondary schools to measure practical classroom adoption.</p>
+                        </div>
+                        <div class="p-4 bg-sage-100/40 rounded-xl border border-sage-200">
+                            <span class="font-bold text-sage-800 block mb-1">Stage 3: Revision</span>
+                            <p class="text-slateDark/70">Refine policies based on direct feedback from educators and students after the test period.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Identified Challenges -->
+                <div class="p-4 bg-terracotta-100/40 rounded-xl border border-terracotta-200 text-xs space-y-1">
+                    <h5 class="font-bold text-terracotta-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Known AIAS Implementation Challenges:</h5>
+                    <p class="text-slateDark/80">Students may still attempt dishonest AI use; teachers with low technical skills may struggle initially without guidance; some schools may opt for total bans initially before seeing safe ethical usage outcomes nationwide.</p>
+                </div>
+            </div>
+
+            <!-- SOLUTIONS 2 & 3 GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Solution 2: AI Literacy Program -->
+                <div class="bg-white rounded-3xl border border-sage-200/80 card-shadow overflow-hidden flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <span class="text-xs font-bold text-sage-600 uppercase tracking-wider">Solution 02</span>
+                        <h3 class="font-serif text-2xl font-bold text-slateDark">AI Literacy Education Program</h3>
+                        <p class="text-xs text-slateDark/70 leading-relaxed">
+                            An 8-session, 12-hour structured program teaching secondary students how AI algorithms work, prompt ethics, critical questioning, and hands-on tool usage.
+                        </p>
+                        <div class="p-4 bg-sage-100/50 rounded-xl border border-sage-200 text-xs space-y-2">
+                            <p class="font-bold text-sage-800"><i class="fa-solid fa-chart-line mr-1"></i> Evidence & Impact:</p>
+                            <p class="text-slateDark/80">Teaches students to question AI outputs rather than accepting them blindly. In a Tehran study of 9th graders, trained students gained significant critical thinking ability (<span class="font-bold text-sage-600">effect size 0.629</span>).</p>
+                        </div>
+                    </div>
+                    <div class="h-44 w-full relative">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Students engaged in classroom workshop" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x400/EEF3F0/5E8172?text=AI+Literacy+Program'">
+                    </div>
+                </div>
+
+                <!-- Solution 3: UNESCO Guidance -->
+                <div class="bg-white rounded-3xl border border-sage-200/80 card-shadow overflow-hidden flex flex-col justify-between">
+                    <div class="p-8 space-y-4">
+                        <span class="text-xs font-bold text-amberGold-600 uppercase tracking-wider">Solution 03</span>
+                        <h3 class="font-serif text-2xl font-bold text-slateDark">UNESCO's Guidance for GenAI</h3>
+                        <p class="text-xs text-slateDark/70 leading-relaxed">
+                            UNESCO's first global policy guidance advises governments and schools to regulate generative AI ethically rather than leaving it unmonitored or implementing total bans.
+                        </p>
+                        <div class="p-4 bg-amberGold-100/50 rounded-xl border border-amberGold-500/30 text-xs space-y-2">
+                            <p class="font-bold text-amberGold-600"><i class="fa-solid fa-shield-halved mr-1"></i> Regulatory Safeguards:</p>
+                            <p class="text-slateDark/80">Enforces data privacy protections, age limits, and validation of AI tools before classroom entry—ensuring human teachers maintain primary control over learning evaluations.</p>
+                        </div>
+                    </div>
+                    <div class="h-44 w-full relative">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Global technology security" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://placehold.co/800x400/FAF3E8/E0A96D?text=UNESCO+Guidance'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Reflection / Conclusion Section -->
+        <section id="conclusion" class="py-16 px-6 bg-gradient-to-t from-terracotta-100/50 to-bgOffWhite border-t border-sage-200/60">
+            <div class="max-w-5xl mx-auto text-center space-y-8">
+                <div class="rounded-3xl overflow-hidden card-shadow border-4 border-white max-w-3xl mx-auto">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" alt="Balance and future technology" class="w-full h-64 sm:h-72 object-cover" loading="lazy" onerror="this.src='https://placehold.co/1000x500/EEF3F0/2C3E50?text=Balancing+Innovation'">
+                </div>
+
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <span class="text-terracotta-500 font-bold text-xs uppercase tracking-widest">Final Reflection</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateDark">Balancing Innovation and Preservation</h2>
+                    <p class="text-sm sm:text-base text-slateDark/80 leading-relaxed italic">
+                        "While AI can support research and learning, its misuse in completing coursework may weaken critical thinking, creativity, problem-solving skills, and academic integrity. Both sides of the issue have fair points—which means an approach addressing the painpoints of both is most ideal."
+                    </p>
+                    <div class="p-6 bg-white rounded-2xl border border-sage-200 card-shadow text-xs sm:text-sm text-slateDark/90 font-medium leading-relaxed">
+                        Innovate not just for the sake of improvement, but for our future as well. For what do technological advancements mean when our people and our future will bear the outcome of our decisions?
+                    </div>
+                </div>
+
+                <div class="pt-4 flex justify-center items-center">
+                    <a href="#overview" class="px-8 py-3.5 bg-sage-100 hover:bg-sage-200 text-sage-800 rounded-full text-xs font-bold border border-sage-200 transition-all text-center">
+                        Back to Top
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slateDark text-white py-10 px-6 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div class="flex items-center space-x-3">
+                <span class="text-lg">⚖️</span>
+                <span>H1101 | Group 3 — MO-SS033-TCW Presentation</span>
+            </div>
+            <p>Balancing the Scales: Where AI is in Education © 2026</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // AIAS Level Data Definition
+        const aiasLevels = {
+            1: {
+                title: "Level 1: No AI",
+                desc: "Tasks completed entirely by the student without any AI generation or assistance. Used for foundational assessments, exams, and baseline critical thinking exercises.",
+                perm: "Evaluation Target: 100% Original Human Work"
+            },
+            2: {
+                title: "Level 2: AI Planning",
+                desc: "AI is used strictly for early brainstorming, structuring outlines, or generating search queries. Students write all main text independently.",
+                perm: "Evaluation Target: AI for Ideation, Human for Content Execution"
+            },
+            3: {
+                title: "Level 3: AI Collaboration",
+                desc: "Student generates initial drafts and uses AI as an editor to refine grammar, rephrase complex logic, or debug structural mistakes.",
+                perm: "Evaluation Target: Human Ownership with AI Polish & Feedback"
+            },
+            4: {
+                title: "Level 4: Full AI Assistance",
+                desc: "AI generates primary content based on student's detailed prompts. Student evaluates, verifies factual accuracy, and edits the output heavily.",
+                perm: "Evaluation Target: Prompt Engineering & Fact Verification Skill"
+            },
+            5: {
+                title: "Level 5: AI Exploration",
+                desc: "Experimental tasks where students test AI limitations, analyze algorithmic bias, or compare AI output against human literature.",
+                perm: "Evaluation Target: Critical Analysis of AI Systems"
+            }
+        };
+
+        function updateAIASDisplay(level) {
+            const data = aiasLevels[level];
+            document.getElementById('aias-level-badge').innerText = `Level ${level}`;
+            document.getElementById('aias-title').innerText = data.title;
+            document.getElementById('aias-desc').innerText = data.desc;
+            document.getElementById('aias-permission').innerHTML = `<i class="fa-solid fa-user-check mr-1"></i> ${data.perm}`;
+        }
+
+        // Stakeholder Tab Switcher Logic
+        function switchStakeholderTab(target) {
+            const tabs = ['educators', 'students', 'institutions', 'media'];
+            tabs.forEach(tab => {
+                const btn = document.getElementById(`tab-${tab}`);
+                const content = document.getElementById(`content-${tab}`);
+                if (tab === target) {
+                    btn.className = 'sh-tab active px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-terracotta-500 text-white shadow-sm';
+                    content.classList.remove('hidden');
+                } else {
+                    btn.className = 'sh-tab px-5 py-2.5 rounded-full text-xs font-bold transition-all bg-sage-100 text-sage-800 hover:bg-sage-200';
+                    content.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize default UI state
+        window.onload = function() {
+            updateAIASDisplay(1);
+        };
+    </script>
+</body>
+</html>
